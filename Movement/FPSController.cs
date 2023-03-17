@@ -70,7 +70,7 @@ public class FPSController : MonoBehaviour {
         m_fpsCamera = Camera.main; 
     }
 
-	private void Start ()
+    private void Start ()
     {
         m_mouseLook.Init(transform, m_fpsCamera.transform);
         m_speed = m_walkSpeed;
@@ -78,7 +78,7 @@ public class FPSController : MonoBehaviour {
         m_stepCycle = m_nextStep = 0f;
     }
 	
-	private void Update ()
+    private void Update ()
     {
         if (!playerControl)
             return;
